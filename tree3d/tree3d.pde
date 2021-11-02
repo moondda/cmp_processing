@@ -133,7 +133,10 @@ void draw() {
   } else {
     pg.beginDraw();
     pg.image(mscreen, 0, 0, 800, 800);
-    pg.text("Main", width/2, height/2);
+    pg.textFont(f0);
+    pg.textSize(100);
+    pg.text("Healing", 20, 150);
+    pg.text("Stroll", 150, 250);
     pg.endDraw();
     mainB.setVisible(false);
     creditB.setVisible(true);
