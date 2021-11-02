@@ -11,12 +11,12 @@ void clock() {
   //making second hand, middle hand
   pushMatrix();
   translate(400, 60);
-  rotate(theta/2);
+  rotate(theta*2);
   line(0, 0, 0, 30);
   popMatrix();
   pushMatrix();
   translate(400, 60);
-  rotate(theta*20);
+  rotate(theta*24);
   line(0, 0, 0, -50);
   popMatrix();
 }
