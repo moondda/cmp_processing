@@ -84,9 +84,8 @@ void setup() {
   
   minim = new Minim(this);
   song = minim.loadFile("bgm.mp3");
-  
   song.setGain(vol);
-  
+  song.play();
   song.loop();
 
   tr[0]=new tree();
@@ -193,7 +192,7 @@ void mousePressed() {
 void mouseClicked() {
   //rain and snow falling using button
   if ((mouseX>600)&&(mouseX<700)&&(mouseY>700)&&(mouseY<800)) rain = !rain;
-  if ((mouseX>700)&&(mouseX<800)&&(mouseY>700)&&(mouseY<800)) snow = !snow;
+  if (mouseButton==LEFT&&(mouseX>700)&&(mouseX<800)&&(mouseY>700)&&(mouseY<800)) snow = !snow;
 }
 
 void keyPressed() {
