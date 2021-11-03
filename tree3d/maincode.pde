@@ -40,6 +40,7 @@ fill(r,g,b);rect(0,0,width,height/2);r=r+0.2;g=g+0.2;b=b+0.2;}
         myrain2[i].displayrain();
         myrain2[i].move2();
       }
+      sg = 0;
     }
     if (snow)
     {
@@ -50,6 +51,7 @@ fill(r,g,b);rect(0,0,width,height/2);r=r+0.2;g=g+0.2;b=b+0.2;}
         myrain2[i].displaysnow();
         myrain2[i].move2();
       }
+      sg+=1;
     }
     cloud();
     clock();
