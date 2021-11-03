@@ -98,7 +98,7 @@ ellipse(moonx+width/2,moony+height/2,50,50);
     endShape();
 
 //snow on the ground
-    if (snow == true) {
+    if (snow == true && rain == false) {
       for (int i = 0; i < 1000; i++) {
         fill(sc[i]);
         noStroke();
