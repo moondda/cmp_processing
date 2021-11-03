@@ -135,6 +135,7 @@ void draw() {
     pg.image(mscreen, 0, 0, 800, 800);
     pg.textFont(f0);
     pg.textSize(100);
+    pg.textAlign(NORMAL);
     pg.text("Healing", 20, 150);
     pg.text("Stroll", 150, 250);
     pg.endDraw();
