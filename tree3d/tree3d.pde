@@ -40,7 +40,7 @@ float cloud2=500;
 float cldspd1 = 0.2;
 float cldspd2 = 0.3;
 float radius=300;
-
+int sg = 10;
 int cl = 1;
 int rainnum = 80;
 int page = 0;
